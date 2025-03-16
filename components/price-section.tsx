@@ -42,9 +42,11 @@ export function PriceSection() {
           }`}
         >
           <h3 className="text-xl font-medium mb-4">Webサイト制作</h3>
-          <p className="text-5xl font-bold mb-8">20,000円</p>
+          <div className="flex">
+            <p className="text-5xl font-bold mb-8">20,000円<span className="text-[16px]">（税込）</span></p>
+          </div>
 
-          <ul className="space-y-4 mb-8 w-full">
+          <ul className="space-y-4 mb-8 w-full md:px-16">
             {[
               "Next.js や Astro などのモダンな技術でWebサイトを高速化",
               "MicroCMSで簡単なWebサイト管理",
@@ -82,9 +84,9 @@ export function PriceSection() {
           }`}
         >
           <h3 className="text-xl font-medium mb-4">ポスター制作</h3>
-          <p className="text-5xl font-bold mb-8">20,000円</p>
+          <p className="text-5xl font-bold mb-8">20,000円<span className="text-[16px]">（税込）</span></p>
 
-          <ul className="space-y-4 mb-8 w-full">
+          <ul className="space-y-4 mb-8 w-full md:px-16">
             {["Adobe Photoshop", "Adobe Illustrator", "Figma", "お客様の希望に沿ったデザイン"].map((feature, index) => (
               <li
                 key={index}
